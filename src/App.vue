@@ -14,7 +14,8 @@
             :key="item.title"
             link
             :to="item.to"
-            :title="item.title">
+            :title="item.title"
+        >
           <template v-slot:prepend>
             <v-icon>{{ item.icon }}</v-icon>
           </template>
@@ -35,7 +36,8 @@ const drawer = ref(null)
 
 const items = ref([
   { title: 'List', to: '/', icon: 'mdi-format-list-checks' },
-  { title: 'About', to: '/about', icon: 'mdi-help-box' }
+  { title: 'About', to: '/about', icon: 'mdi-help-box' },
+  { title: 'Group', to: '/group', icon: 'mdi-account-group' }
 ])
 
 const right = ref(false)

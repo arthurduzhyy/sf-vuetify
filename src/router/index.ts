@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Group from '../views/Group.vue'
 import List from '../views/List.vue'
 
 const router = createRouter({
@@ -17,6 +18,11 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
     },
+    {
+      path: '/group',
+      name: 'group',
+      component: Group
+    }
   ],
 })
 
